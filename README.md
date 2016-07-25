@@ -13,7 +13,8 @@ Structure
 How to use
 =============
 
+1) `$ npm install`
 
-1)  `$ gulp` - it will start local server at <a href="http://localhost:8080/">http://localhost:8080/</a>
+2) `$ gulp` - it will start local server at <a href="http://localhost:8080/">http://localhost:8080/</a>
 
-2) `$ npm run build` - it will delete your build folder first and then compile project in production mode(using code minifying etc.)
+3) `$ npm run build` - it will delete your build folder first and then compile project in production mode(using code minifying etc.)
