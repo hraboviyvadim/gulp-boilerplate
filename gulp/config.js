@@ -6,6 +6,7 @@ module.exports = {
     sass    : 'src/sass/',
     sassGen : 'src/sass/generated',
     js      : 'src/js/',
+    vendors : 'src/js/vendors/',
     svg     : 'src/img/svg',
     img     : 'src/img/',
     icons   : 'src/icons',
@@ -18,6 +19,7 @@ module.exports = {
     css     : 'build/css/',
     html    : 'build/',
     js      : 'build/js/',
+    vendors : 'build/js/vendors/',
     img     : 'build/img/'
   },
   errorHandler: require('./util/handle-errors')
