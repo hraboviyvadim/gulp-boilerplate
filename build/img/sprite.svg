@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><defs>
+        <style>
+            .cls-1{fill:#fff;fill-rule:evenodd}
+        </style>
+    </defs><symbol id="icon-close" viewBox="0 0 100 100">
+    <path d="M77.6 21.1l-28 28.1-28.1-28.1-1.9 1.9 28 28.1-28 28.1 1.9 1.9L49.6 53l28 28.1 2-1.9-28.1-28.1L79.6 23z"/>
+</symbol><symbol id="icon-humb" viewBox="0 0 18 11">
+    
+    <path d="M0 11v-1h18v1H0zm0-6h18v1H0V5zm0-5h18v1H0V0z" class="cls-1"/>
+</symbol></svg>

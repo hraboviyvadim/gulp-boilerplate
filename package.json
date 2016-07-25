@@ -1,14 +1,14 @@
 {
-  "name": "Coderiver-Project",
-  "version": "0.2.0",
-  "description": "Riverco.de gulp template",
-  "author": "Coderiver <html@coderiver.com.ua>",
+  "name": "Gulp-webpack boilerplate",
+  "version": "1.0.0",
+  "description": "My gulp template",
+  "author": "Graboviy Vadym <hraboviyvadim@gmail.com>",
   "scripts": {
     "build": "trash /build && NODE_ENV=production gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/coderiver/gulp"
+    "url": "https://github.com/hraboviyvadim/gulp-boilerplate"
   },
   "devDependencies": {
     "autoprefixer": "~6.0.3",
