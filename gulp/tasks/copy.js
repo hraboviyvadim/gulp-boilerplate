@@ -16,6 +16,7 @@ gulp.task('copy', function() {
 
 gulp.task('copy:watch', function() {
     gulp.watch(config.src.img+'*', ['copy']);
+    gulp.watch(config.src.vendors+'*', ['copy']);
     gulp.watch(config.src.root+'fonts/*', ['copy']);
 });
 

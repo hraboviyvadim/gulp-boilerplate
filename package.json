@@ -1,6 +1,6 @@
 {
   "name": "Gulp-webpack-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "My gulp template",
   "author": "Graboviy Vadym <hraboviyvadim@gmail.com>",
   "scripts": {
