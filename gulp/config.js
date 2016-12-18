@@ -7,7 +7,7 @@ module.exports = {
     sassGen : 'src/sass/generated',
     js      : 'src/js/',
     vendors : 'src/js/vendors/',
-    svg     : 'src/img/svg',
+    svg     : 'src/img/svg/',
     img     : 'src/img/',
     icons   : 'src/icons',
     helpers : 'gulp/helpers/',

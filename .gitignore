@@ -30,3 +30,4 @@ nbproject
 node_modules
 bower_components
 site/lib
+.gulp

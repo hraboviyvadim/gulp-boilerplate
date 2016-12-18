@@ -4,37 +4,15 @@ webpackJsonp([0,1],[
 
 	'use strict';
 	
-	var _common = __webpack_require__(1);
+	var $ = __webpack_require__(1);
 	
-	var _common2 = _interopRequireDefault(_common);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var $ = __webpack_require__(2);
-	
+	// import file from './file';
 	$(document).ready(function () {
-	    (0, _common2.default)();
+	    // file();
 	});
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	var $ = __webpack_require__(2);
-	
-	var common = function common() {
-	
-	    console.log('lets go!!');
-	};
-	exports.default = common;
-
-/***/ },
-/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*eslint-disable no-unused-vars*/

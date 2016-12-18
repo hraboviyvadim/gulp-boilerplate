@@ -1,7 +1,7 @@
 'use strict';
 const $ = require('jquery');
 
-import common from './common';
+// import file from './file';
 $(document).ready(function () {
-    common();
+    // file();
 });
