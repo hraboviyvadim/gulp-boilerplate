@@ -1,22 +1,22 @@
-{% import "./_mixins.html" as mixins %}
+{% import "./_mixins.nunjucks" as mixins %}
 <!DOCTYPE html>
 <html>
 <head>
-    {% include "layouts/_head.html" %}
+    {% include "layouts/_head.nunjucks" %}
 </head>
 <body>
 
 <!-- BEGIN content -->
 <div class="out">
+    <!-- header -->
+    {% include "../blocks/_header.nunjucks" %}
     <!-- page content -->
-    <div class="l-content">
         {% block content %}{% endblock %}
-    </div>
 </div>
 <!-- END content -->
 
 <!-- footer -->
-{% include "../blocks/_footer.html" %}
+{% include "../blocks/_footer.nunjucks" %}
 
 <!-- BEGIN scripts -->
 <script type="text/javascript" src="js/common.js"></script>

@@ -1,15 +1,16 @@
-var gulp           = require('gulp');
-var nunjucksRender = require('gulp-nunjucks-render');
-var plumber        = require('gulp-plumber');
-var gulpif         = require('gulp-if');
-var changed        = require('gulp-changed');
-var prettify       = require('gulp-prettify');
-var frontMatter    = require('gulp-front-matter');
-var config         = require('../config');
+'use strict';
+let gulp           = require('gulp');
+let nunjucksRender = require('gulp-nunjucks-render');
+let plumber        = require('gulp-plumber');
+let gulpif         = require('gulp-if');
+let changed        = require('gulp-changed');
+let prettify       = require('gulp-prettify');
+let frontMatter    = require('gulp-front-matter');
+let config         = require('../config');
 
 function renderHtml(onlyChanged) {
     return gulp
-        .src([config.src.templates + '/**/[^_]*.html'])
+        .src([config.src.templates + '/**/[^_]*.nunjucks'])
         .pipe(plumber({
             errorHandler: config.errorHandler
         }))
@@ -46,10 +47,10 @@ gulp.task('nunjucks:changed', function() {
 
 gulp.task('nunjucks:watch', function() {
     gulp.watch([
-        config.src.templates + '/**/[^_]*.html'
+        config.src.templates + '/**/[^_]*.nunjucks'
     ], ['nunjucks:changed']);
 
     gulp.watch([
-        config.src.templates + '/**/_*.html'
+        config.src.templates + '/**/_*.nunjucks'
     ], ['nunjucks']);
 });
