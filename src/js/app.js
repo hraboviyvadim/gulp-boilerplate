@@ -1,5 +1,5 @@
 'use strict';
-const $ = require('jquery');
+import $ from 'jquery';
 
 // import file from './file';
 $(document).ready(function () {
