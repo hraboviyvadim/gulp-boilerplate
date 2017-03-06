@@ -58,23 +58,4 @@ const configs = {
 
 };
 
-// lets add code minification in case of production environment
-if (NODE_ENV == 'production') {
-    configs.plugins.push(
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: {
-                drop_console: true,
-                unsafe: true
-            }
-        })
-    );
-    config.plugins.push(
-        new webpack.LoaderOptionsPlugin({
-            minimize: true
-        })
-    );
-    config.entry = ['./app.js', './common.js'];
-}
-
 module.exports = configs;
