@@ -10,7 +10,7 @@ let config         = require('../config');
 
 function renderHtml(onlyChanged) {
     return gulp
-        .src([config.src.templates + '/**/[^_]*.nunjucks'])
+        .src([config.src.templates + '/**/[^_]*.njk'])
         .pipe(plumber({
             errorHandler: config.errorHandler
         }))
@@ -47,10 +47,10 @@ gulp.task('nunjucks:changed', function() {
 
 gulp.task('nunjucks:watch', function() {
     gulp.watch([
-        config.src.templates + '/**/[^_]*.nunjucks'
+        config.src.templates + '/**/[^_]*.njk'
     ], ['nunjucks:changed']);
 
     gulp.watch([
-        config.src.templates + '/**/_*.nunjucks'
+        config.src.templates + '/**/_*.njk'
     ], ['nunjucks']);
 });

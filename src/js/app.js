@@ -1,5 +1,1 @@
-import $ from 'jquery';
-
-$(document).ready(() => {
-    // some code
-});
+// some code

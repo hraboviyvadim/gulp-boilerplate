@@ -45,11 +45,6 @@ const configs = {
 
   // add necessary plugins here
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'common',
-      filename: '[name].js',
-      minChunks: 2
-    }),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(NODE_ENV)

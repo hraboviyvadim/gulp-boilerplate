@@ -1,12 +1,13 @@
 {
-  parser: "babel-eslint",
+  "parser": "babel-eslint",
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
-  "extends": ["airbnb-base"],
+  "extends": "eslint:recommended",
   "rules": {
-    "max-len": [1, 80, 2, {ignoreComments: true}],
+    "max-len": [1, 80, 2, {"ignoreComments": true}],
     "no-unused-vars": [1]
   }
 }
