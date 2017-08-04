@@ -51,6 +51,18 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(config.dest.css));
 });
+gulp.task('sass:build', function() {
+
+  return gulp
+    .src(config.src.sass + '/*.{sass,scss}')
+    .pipe(sass({outputStyle: 'compressed'}))
+    .on('error', notify.onError({
+      title: 'Sass Error!',
+      message: '<%= error.message %>'
+    }))
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(config.dest.css));
+});
 
 gulp.task('sass:watch', function() {
     gulp.watch(config.src.sass + '/**/*', ['sass']);
