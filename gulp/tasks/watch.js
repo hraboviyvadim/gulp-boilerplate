@@ -26,4 +26,4 @@ gulp.task('delete', function (cb) {
     rimraf('./'+config.dest.root, cb);
 });
 gulp.task('default', gulp.series('server', 'watch'));
-gulp.task('build', gulp.parallel('nunjucks', 'sprite', 'sprite:svg', 'copy','webpack','sass:build', 'tinypng'));
+gulp.task('build', gulp.series('nunjucks', 'sprite', 'sprite:svg', 'copy','webpack','sass:build', 'tinypng'));

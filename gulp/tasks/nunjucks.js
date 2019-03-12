@@ -45,12 +45,13 @@ gulp.task('nunjucks:changed', function() {
     return renderHtml(true);
 });
 
-gulp.task('nunjucks:watch', function() {
+gulp.task('nunjucks:watch', function(done) {
     gulp.watch([
         config.src.templates + '/**/[^_]*.njk'
-    ], ['nunjucks:changed']);
+    ], gulp.series('nunjucks:changed'));
 
     gulp.watch([
         config.src.templates + '/**/_*.njk'
-    ], ['nunjucks']);
+    ], gulp.series('nunjucks'));
+    done();
 });

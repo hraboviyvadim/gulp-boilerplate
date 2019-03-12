@@ -2,7 +2,7 @@ var gulp  = require('gulp');
 var include = require("gulp-include");
 var config = require('../config');
 var browserSync = require('browser-sync');
-reload = browserSync.reload;
+var reload = browserSync.reload;
 
 gulp.task('html', function () {
     gulp.src(config.src.root+'*.html')
@@ -14,7 +14,7 @@ gulp.task('html', function () {
 
 gulp.task('html:watch', function() {
     gulp.watch([
-    	config.src.root+'*.html', 
-    	config.src.root+'partials/*.html'
-    ], ['html']);
+        config.src.root+'*.html',
+        config.src.root+'partials/*.html'
+    ], gulp.series('html'));
 });

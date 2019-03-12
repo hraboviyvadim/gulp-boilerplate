@@ -65,5 +65,5 @@ gulp.task('sass:build', function() {
 });
 
 gulp.task('sass:watch', function() {
-    gulp.watch(config.src.sass + '/**/*', ['sass']);
+    return gulp.watch(config.src.sass + '**/*', gulp.series('sass'));
 });

@@ -4,7 +4,7 @@ var spritesmith = require('gulp.spritesmith');
 var config = require('../config');
 
 
-gulp.task('sprite', function() {
+gulp.task('sprite', function(done) {
     var spriteData = gulp.src(config.src.img + '/icons/*.png')
     .pipe(spritesmith({
         imgName: 'icons.png',
@@ -20,9 +20,10 @@ gulp.task('sprite', function() {
     spriteData.css
         .pipe(gulp.dest(config.src.sass+'/lib/'))
         .pipe(notify("New sprite created!"));
+    done();
 });
 
 gulp.task('sprite:watch', function() {
-    gulp.watch(config.src.img + '/icons/*.png', ['sprite']);
+    return gulp.watch(config.src.img + 'icons/*.png', gulp.series('sprite'));
 });
 

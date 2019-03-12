@@ -38,7 +38,7 @@ gulp.task('sprite:svg', function() {
 });
 
 gulp.task('sprite:svg:watch', function() {
-    gulp.watch(pathToIcons, ['sprite:svg']);
+    return gulp.watch(pathToIcons, gulp.series('sprite:svg'));
 });
 
 function extractDataFromIcons($, file) {

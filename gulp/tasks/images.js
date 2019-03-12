@@ -9,4 +9,5 @@ gulp.task('tinypng', function(cb) {
     gulp.src([config.src.img+'**/*.{png,jpg}', '!'+imgIcons, '!'+imgSvg])
         .pipe(tiny())
         .pipe(gulp.dest(config.dest.img));
+    cb();
 });
