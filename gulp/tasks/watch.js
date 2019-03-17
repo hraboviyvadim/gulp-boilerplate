@@ -18,6 +18,7 @@ gulp.task('watch', gulp.parallel(
   'sprite:svg:watch',
   'svgo:watch',
   'nunjucks:watch',
+  // 'pug:watch',
   'webpack:watch',
 ));
 
@@ -27,3 +28,4 @@ gulp.task('delete', function (cb) {
 });
 gulp.task('default', gulp.series('server', 'watch'));
 gulp.task('build', gulp.series('nunjucks', 'sprite', 'sprite:svg', 'copy','webpack','sass:build', 'tinypng'));
+// gulp.task('build', gulp.series('pug', 'sprite', 'sprite:svg', 'copy','webpack','sass:build', 'tinypng'));

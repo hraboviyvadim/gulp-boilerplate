@@ -1,6 +1,6 @@
 {
   "name": "Gulp-webpack-boilerplate",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "My gulp template",
   "author": "Graboviy Vadym <hraboviyvadim@gmail.com>",
   "scripts": {
@@ -34,6 +34,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "7.0.0",
     "gulp-prettify": "0.5.0",
+    "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "3.1.0",
     "gulp-sourcemaps": "2.6.0",
